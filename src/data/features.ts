@@ -1,7 +1,7 @@
-import { Zap, Shield, Heart, Coffee, Smile, Type, TabletSmartphone, CodeXml } from 'lucide-astro';
+import { Hammer, Home, Building2, DoorClosed, Shield, Fence, Heart, Coffee, Smile } from 'lucide-astro';
 
 // Define the LucideIcon type based on the structure of Lucide icons
-type LucideIcon = typeof Zap;
+type LucideIcon = typeof Hammer;
 
 export interface Feature {
     icon: LucideIcon;
@@ -20,36 +20,36 @@ export const featureLists: Record<string, FeatureList> = {
         id: 'main',
         features: [
             {
-                icon: Zap,
-                title: 'Lightning Fast Performance',
-                description: 'Optimized for speed and performance'
+                icon: Home,
+                title: 'Residential & Commercial Builds',
+                description: 'Custom homes, shops, and tenant improvements',
+            },
+            {
+                icon: Hammer,
+                title: 'Renovations',
+                description: 'Interior and exterior upgrades for any space',
+            },
+            {
+                icon: Building2,
+                title: 'New Construction',
+                description: 'From foundations to finished structures',
+            },
+            {
+                icon: Fence,
+                title: 'Decks & Fencing',
+                description: 'Wood, composite, and chain link options',
+            },
+            {
+                icon: DoorClosed,
+                title: 'Overhead Doors',
+                description: 'Installation and maintenance of garage doors',
             },
             {
                 icon: Shield,
-                title: 'SEO Optimized Structure',
-                description: 'Built with SEO best practices in mind'
+                title: 'Roll Shutters',
+                description: 'Security and energy-efficient solutions',
             },
-            {
-                icon: TabletSmartphone,
-                title: 'Responsive by Default',
-                description: 'Mobile-friendly out of the box'
-            },
-            {
-                icon: Smile,
-                title: 'Easy Customization',
-                description: 'Customize the theme to your liking'
-            },
-            {
-                icon: Type,
-                title: 'TypeScript Support',
-                description: 'Built with TypeScript in mind'
-            },
-            {
-                icon: CodeXml,
-                title: 'Minimal Dependencies',
-                description: 'Keep your project lightweight'
-            }
-        ]
+        ],
     },
     secondary: {
         id: 'secondary',
@@ -57,18 +57,18 @@ export const featureLists: Record<string, FeatureList> = {
             {
                 icon: Heart,
                 title: 'Made with Love',
-                description: 'Crafted with attention to detail'
+                description: 'Crafted with attention to detail',
             },
             {
                 icon: Coffee,
                 title: 'Always Fresh',
-                description: 'Regular updates and improvements'
+                description: 'Regular updates and improvements',
             },
             {
                 icon: Smile,
                 title: 'User Friendly',
-                description: 'Intuitive and easy to use'
-            }
-        ]
-    }
+                description: 'Intuitive and easy to use',
+            },
+        ],
+    },
 };
