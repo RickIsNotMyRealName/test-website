@@ -1,27 +1,27 @@
 export const siteConfig = {
-  companyName: 'Titan Core',
-  siteUrl: 'https://titan-core.com',
-  Socials: {
-      xSocial: 'https://x.com/astrodotbuild',
-      Github: 'https://github.com/withastro',
-      Instagram: 'https://www.instagram.com/astrodotbuild',
-      LinkedIn: 'https://www.linkedin.com/company/astrodotbuild',
-      Email: 'support@titan-core.com',
-      Phone: '+123 456 7890',
-      Location: '123 Main St, Anytown, USA',
-  }
+    companyName: 'Mount View Ventures Inc.',
+    siteUrl: 'https://mountviewventures.com',
+    Socials: {
+        xSocial: 'https://x.com',
+        Github: 'https://github.com',
+        Instagram: 'https://instagram.com',
+        LinkedIn: 'https://linkedin.com',
+        Email: 'info@mountviewventures.com',
+        Phone: '+1 (555) 123-4567',
+        Location: 'Your City, Canada',
+    },
 };
 
 export const SEO = {
-  Separator: '|',
-  SiteName: 'Titan Core',
-  defaultDescription: 'A modern, high-performance Astro JS theme',
+    Separator: '|',
+    SiteName: 'Mount View Ventures Inc.',
+    defaultDescription: 'Residential and commercial construction services in your community',
 };
-  
+
 export const blogSetting = {
-  postsPerPage: 6   
-}
+    postsPerPage: 6,
+};
 
 export const themeSetting = {
-  theme: 'zeus'
-}
+    theme: 'zeus',
+};

@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import InnerHero from '../components/sections/InnerHero.astro';
+
+const heroContent = {
+    title: 'About Us',
+    description: 'Learn more about Mount View Ventures Inc.',
+};
+---
+
+<Layout title="About Us" description="Construction services for homes and businesses">
+    <InnerHero content={heroContent} />
+    <article class="prose site-container--small mx-auto px-4 py-base">
+        <h2>About Us</h2>
+        <p>
+            At Mount View Ventures Inc., we are a dedicated father-and-son team with a passion for building, improving,
+            and protecting the spaces where people live and work. With over 25 years of experience in the construction
+            industry, we take pride in delivering high-quality craftsmanship, practical solutions, and honest service on
+            every project.
+        </p>
+        <p>
+            We specialize in residential and commercial construction—from custom home builds and full-scale renovations
+            to office upgrades and tenant improvements. Whether you’re looking to enhance your living space, modernize
+            your business location, or create income-generating suites, we offer reliable expertise every step of the
+            way.
+        </p>
+        <p>
+            Our services also extend to outdoor structures and finishes, including decks, fencing, and concrete work.
+            We’re proud to supply and install secure, durable overhead doors for homes and businesses, along with
+            commercial-grade roll shutters that enhance security and energy efficiency.
+        </p>
+        <p>
+            At our core, we’re builders—but more importantly, we’re community members. We believe in treating every
+            project like it’s our own, with quality, integrity, and long-term value in mind.
+        </p>
+        <p>Let us help bring your vision to life—professionally, affordably, and built to last.</p>
+        <h2>Vision Statement</h2>
+        <p>
+            Our vision is to be a trusted leader in the construction and renovation industry, known for delivering
+            affordable, high-quality housing and property improvements that enhance lives and strengthen communities. We
+            strive to build and renovate homes and offices with integrity, sustainability, and affordability at the
+            forefront—offering solutions that add value, functionality, and peace of mind. Through our work, we aim to
+            foster a lasting legacy of excellence for generations to come.
+        </p>
+        <h2>Mission Statement</h2>
+        <p>
+            At Mount View Ventures Inc., we are committed to building strong communities through quality craftsmanship,
+            innovative designs, and cost-effective solutions. With over 25 years of experience in single-family homes,
+            renovations, and income-producing suites, our family-run business is dedicated to creating affordable
+            housing options that meet the needs of today’s families while ensuring long-lasting value. We also
+            specialize in comprehensive home and office renovations, as well as the installation of secure and
+            functional overhead doors and roll shutters—delivering practical upgrades that enhance comfort, security,
+            and visual appeal.
+        </p>
+    </article>
+</Layout>
