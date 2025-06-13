@@ -457,7 +457,7 @@
         --color-secondary: #000000;
         --color-secondary-light: #333333;
         --color-secondary-dark: #000000;
-        --color-accent: #ffffff;
+        --color-accent: #00411e;
         --color-background: #ffffff;
         --color-background-light: #fafafa;
         --color-background-dark: #d0d0d0;
@@ -467,9 +467,9 @@
         --color-body-base: #1a1a1a;
         --color-body-light: #1a1a1a;
         --color-body-dark: #ffffff;
-        --color-eyebrow: #333333;
-        --color-eyebrow-light: #333333;
-        --color-eyebrow-dark: #000000;
+        --color-eyebrow: var(--color-accent);
+        --color-eyebrow-light: var(--color-accent);
+        --color-eyebrow-dark: var(--color-secondary);
         --color-input: var(--color-background-light);
         --color-input-light: var(--color-background-light);
         --color-input-dark: var(--color-background-dark);
@@ -477,16 +477,16 @@
         --color-input-text-light: var(--color-headline-light);
         --color-input-text-dark: var(--color-headline-dark);
         --color-nav-text: var(--color-body-base);
-        --color-nav-text-hover: var(--color-secondary);
-        --color-nav-text-active: var(--color-secondary);
-        --color-nav-text-current: var(--color-secondary);
+        --color-nav-text-hover: var(--color-accent);
+        --color-nav-text-active: var(--color-accent);
+        --color-nav-text-current: var(--color-accent);
         --color-nav-submenu-bg: var(--color-background-light);
         --color-nav-mobile-text: #000000;
         --color-nav-mobile-text-hover: #333333;
         --color-nav-mobile-text-active: #000000;
         --color-nav-mobile-text-current: #333333;
-        --color-header-logo: var(--color-secondary);
-        --color-footer-logo: var(--color-secondary);
+        --color-header-logo: var(--color-accent);
+        --color-footer-logo: var(--color-accent);
     }
 }
 
