@@ -450,6 +450,44 @@
         --color-header-logo: var(--color-primary);
         --color-footer-logo: var(--color-primary);
     }
+    [data-theme='mountview'] {
+        --color-primary: #000000;
+        --color-primary-light: #333333;
+        --color-primary-dark: #000000;
+        --color-secondary: #c0c0c0;
+        --color-secondary-light: #d3d3d3;
+        --color-secondary-dark: #a9a9a9;
+        --color-accent: #ffffff;
+        --color-background: #ffffff;
+        --color-background-light: #f5f5f5;
+        --color-background-dark: #000000;
+        --color-headline: #000000;
+        --color-headline-light: #000000;
+        --color-headline-dark: #ffffff;
+        --color-body-base: #000000;
+        --color-body-light: #000000;
+        --color-body-dark: #ffffff;
+        --color-eyebrow: #a9a9a9;
+        --color-eyebrow-light: #a9a9a9;
+        --color-eyebrow-dark: #000000;
+        --color-input: var(--color-background-light);
+        --color-input-light: var(--color-background-light);
+        --color-input-dark: var(--color-background-dark);
+        --color-input-text: var(--color-body-base);
+        --color-input-text-light: var(--color-headline-light);
+        --color-input-text-dark: var(--color-headline-dark);
+        --color-nav-text: var(--color-body-base);
+        --color-nav-text-hover: var(--color-primary);
+        --color-nav-text-active: var(--color-primary);
+        --color-nav-text-current: var(--color-primary);
+        --color-nav-submenu-bg: var(--color-background-light);
+        --color-nav-mobile-text: #ffffff;
+        --color-nav-mobile-text-hover: #c0c0c0;
+        --color-nav-mobile-text-active: #ffffff;
+        --color-nav-mobile-text-current: #c0c0c0;
+        --color-header-logo: var(--color-primary);
+        --color-footer-logo: var(--color-primary);
+    }
 }
 
 @layer components {

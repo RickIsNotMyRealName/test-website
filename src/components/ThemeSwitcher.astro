@@ -9,7 +9,8 @@ const themes = [
     { id: 'athena', label: 'Athena', desc: 'Wisdom' },        // Olive & golds
     { id: 'hermes', label: 'Hermes', desc: 'Speed' },         // Swift blues & silvers
     { id: 'dionysus', label: 'Dionysus', desc: 'Festivity' }, // Purple & wine reds
-    { id: 'demeter', label: 'Demeter', desc: 'Nature' }       // Earth tones & greens
+    { id: 'demeter', label: 'Demeter', desc: 'Nature' },       // Earth tones & greens
+    { id: 'mountview', label: 'MountView', desc: 'Black & Silver' } // Company theme
 ];
 ---
 
@@ -61,8 +62,8 @@ const themes = [
     
     if (!themeButton || !themeDropdown) throw new Error('Theme switcher elements not found');
     
-    // Get theme from localStorage or default to 'thor'
-    const currentTheme = localStorage.getItem('theme') || 'thor';
+    // Get theme from localStorage or default to 'mountview'
+    const currentTheme = localStorage.getItem('theme') || 'mountview';
     document.body.setAttribute('data-theme', currentTheme);
 
     // Toggle dropdown
