@@ -7,8 +7,8 @@ export const siteConfig = {
         Instagram: 'https://instagram.com',
         LinkedIn: 'https://linkedin.com',
         Email: 'info@mountviewventures.com',
-        Phone: '+1 (555) 123-4567',
-        Location: 'Your City, Canada',
+        Phone: '+1 (587) 377-1379',
+        Location: 'Slave Lake, Alberta',
     },
 };
 
