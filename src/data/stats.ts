@@ -38,32 +38,32 @@ export const statsLists: Record<string, StatsList> = {
             {
                 value: 500000,
                 label: 'Lines of Code',
-                prefix: '+'
-            }
-        ]
+                prefix: '+',
+            },
+        ],
     },
     withContent: {
         id: 'withContent',
         stats: [
             {
+                value: 25,
+                label: 'Years Experience',
+                prefix: '+',
+            },
+            {
+                value: 100,
+                label: 'Projects Completed',
+                prefix: '+',
+            },
+            {
+                value: 50,
+                label: 'Satisfied Clients',
+                prefix: '+',
+            },
+            {
                 value: 10,
-                label: 'Color Schemes',
+                label: 'Service Areas',
             },
-            {
-                value: 14.53,
-                label: 'Core Bundle Size',
-                suffix: 'KB'
-            },
-            {
-                value: 11,
-                label: 'Pre-Built Components',
-            },
-            {
-                value: 10,
-                label: 'Build Time',
-                prefix: '<100',
-                suffix: 's'
-            }
-        ]
-    }
+        ],
+    },
 };
