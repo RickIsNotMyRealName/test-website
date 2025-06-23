@@ -448,25 +448,27 @@
         --color-footer-logo: var(--color-primary);
     }
     [data-theme='mountview'] {
-        --color-primary: #00411e;
-        --color-primary-light: #0a7031;
-        --color-primary-dark: #003316;
-        --color-secondary: #c0c0c0;
-        --color-secondary-light: #e0e0e0;
-        --color-secondary-dark: #a9a9a9;
-        --color-accent: #00411e;
+        --color-primary: #166534;
+        --color-primary-light: #2ba45f;
+        --color-primary-dark: #0a2a14;
+        --color-secondary: #475569;
+        --color-secondary-light: #6b7c95;
+        --color-secondary-dark: #334155;
+        --color-accent: #c05600;
+        --color-accent-light: #d6781f;
+        --color-accent-dark: #8a4400;
         --color-background: #ffffff;
-        --color-background-light: #f4f4f4;
-        --color-background-dark: #dddddd;
-        --color-headline: #000000;
-        --color-headline-light: #000000;
+        --color-background-light: #f7f9f9;
+        --color-background-dark: #475569;
+        --color-headline: #111827;
+        --color-headline-light: #374151;
         --color-headline-dark: #ffffff;
-        --color-body-base: #1a1a1a;
-        --color-body-light: #1a1a1a;
-        --color-body-dark: #ffffff;
+        --color-body-base: #374151;
+        --color-body-light: #4b5563;
+        --color-body-dark: #e5e7eb;
         --color-eyebrow: var(--color-primary);
         --color-eyebrow-light: var(--color-primary-light);
-        --color-eyebrow-dark: var(--color-secondary-dark);
+        --color-eyebrow-dark: #cbd5e1;
         --color-input: var(--color-background-light);
         --color-input-light: var(--color-background-light);
         --color-input-dark: var(--color-background-dark);
@@ -479,9 +481,9 @@
         --color-nav-text-current: var(--color-primary);
         --color-nav-submenu-bg: var(--color-background-light);
         --color-nav-mobile-text: var(--color-body-base);
-        --color-nav-mobile-text-hover: var(--color-primary);
+        --color-nav-mobile-text-hover: var(--color-headline-dark);
         --color-nav-mobile-text-active: var(--color-body-base);
-        --color-nav-mobile-text-current: var(--color-primary);
+        --color-nav-mobile-text-current: var(--color-headline-dark);
         --color-header-logo: var(--color-primary);
         --color-footer-logo: var(--color-primary);
     }
