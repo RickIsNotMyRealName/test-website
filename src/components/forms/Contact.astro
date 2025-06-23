@@ -4,7 +4,6 @@ import Input from '@components/ui/form/Input.astro';
 import Textarea from '@components/ui/form/Textarea.astro';
 import Radio from '@components/ui/form/Radio.astro';
 import Checkbox from '@components/ui/form/Checkbox.astro';
-import Select from '@components/ui/form/Select.astro';
 
 const hearAboutOptions = [
     { label: 'Search Engine', value: 'search' },
@@ -44,6 +43,14 @@ const formBackground = 'light';
             required
             background={formBackground}
         />
+        <Radio
+            label="What service are you interested in?"
+            id="service"
+            name="service"
+            options={serviceOptions}
+            required
+            background={formBackground}
+        />
     </div>
 
     <Textarea label="Message" id="message" name="message" required background={formBackground} />
@@ -55,19 +62,6 @@ const formBackground = 'light';
         required
         background={formBackground}
     />
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Select
-            label="Which services are you interested in?"
-            id="service"
-            name="service"
-            options={serviceOptions}
-            multiple
-            required
-            placeholder="Select applicable services"
-            background={formBackground}
-        />
-    </div>
 
     <div class="mt-6">
         <Button>Submit</Button>
