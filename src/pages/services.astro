@@ -70,13 +70,10 @@ const schemaData = {
         </div>
     </div>
 
-    <Button
-        href="/contact"
-        variant="accent"
-        class="fixed bottom-4 right-4 z-50 focus-visible:ring-accent"
-        aria-label="Get a Quote"
-    >
-        Get a Quote
-    </Button>
+    <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-50">
+        <Button href="/contact" variant="accent" class="focus-visible:ring-accent" aria-label="Get a Quote">
+            Get a Quote
+        </Button>
+    </div>
     <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
 </Layout>
