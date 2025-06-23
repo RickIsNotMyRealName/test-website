@@ -3,9 +3,9 @@
 ## Pages
 
 - [x] Services page
-- [ ] Rental Page
-    - [ ] dump trailer
-    - [ ] holiday trailer
+- [x] Rental Page
+  - [x] dump trailer
+  - [x] holiday trailer
 - [ ] Contact Us page
 - [ ] Gallery page
 - [x] About Us page
