@@ -13,7 +13,11 @@ export const headerMenu: MenuItem[] = [
     { name: 'Rentals', link: '/rental' },
 ];
 
-export const footerMenu: { name: string; link: string }[] = [];
+export const footerMenu: { name: string; link: string }[] = [
+    { name: 'About Us', link: '/about' },
+    { name: 'Services', link: '/services' },
+    { name: 'Rentals', link: '/rental' },
+];
 
 export const legalMenu = [
     { name: 'Privacy Policy', link: '/legal/privacy-policy' },
