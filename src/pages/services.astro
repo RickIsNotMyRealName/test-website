@@ -1,0 +1,82 @@
+---
+import Layout from '../layouts/Layout.astro';
+import InnerHero from '../components/sections/InnerHero.astro';
+import Button from '../components/ui/Button.astro';
+import { services } from '../data/services';
+import { siteConfig } from '../data/config';
+
+const heroContent = {
+    title: 'Our Services',
+    description: 'Building Quality Spaces, Enhancing Lives—Inside, Outside, and All Around.',
+};
+
+const schemaData = {
+    '@context': 'https://schema.org',
+    '@graph': services.map((s) => ({
+        '@type': 'Service',
+        name: s.title,
+        description: s.blurb,
+        serviceType: s.title,
+        provider: { '@type': 'LocalBusiness', name: siteConfig.companyName },
+        hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: s.title,
+            itemListElement: s.details.map((d) => ({ '@type': 'Offer', name: d })),
+        },
+    })),
+};
+---
+
+<Layout title="Our Services" description="Construction and renovation services">
+    <InnerHero content={heroContent} />
+    <nav class="bg-background-light shadow-sm">
+        <ul class="site-container mx-auto px-4 py-4 flex flex-wrap justify-center gap-4">
+            {
+                services.map((s) => (
+                    <li>
+                        <a
+                            href={`#${s.id}`}
+                            class="text-body-base hover:text-accent focus-visible:ring-2 focus-visible:ring-accent rounded px-2"
+                        >
+                            {s.title}
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+    </nav>
+
+    <div class="site-container mx-auto px-4 py-base">
+        <h2 class="sr-only">Our Services Overview</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {
+                services.map((s) => (
+                    <section
+                        id={s.id}
+                        class="bg-white border-t-4 border-accent rounded-lg shadow-sm p-6 flex flex-col scroll-mt-32"
+                    >
+                        <div class="flex items-center gap-3 mb-4">
+                            <s.icon class="text-accent w-8 h-8" aria-hidden="true" />
+                            <h3 class="text-h3 m-0" id={`${s.id}-title`}>
+                                {s.title}
+                            </h3>
+                        </div>
+                        <p class="mb-4">{s.blurb}</p>
+                        <ul class="list-disc pl-5 flex-1">
+                            {s.details.map((d) => (
+                                <li>{d}</li>
+                            ))}
+                        </ul>
+                    </section>
+                ))
+            }
+        </div>
+    </div>
+
+    <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-50">
+        <Button href="/contact" variant="accent" size="lg" class="focus-visible:ring-accent" aria-label="Get a Quote">
+            Get a Quote
+        </Button>
+    </div>
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+</Layout>
