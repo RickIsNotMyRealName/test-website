@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import InnerHero from '../components/sections/InnerHero.astro';
+import Features from '../components/sections/Features.astro';
+import { Truck, Tent } from 'lucide-astro';
+
+const heroContent = {
+    title: 'Rentals',
+    description: 'Quality equipment for your next project or getaway.',
+    backgroundImage: import('../assets/images/home/default-hero.jpg'),
+    overlayOpacity: 0.4,
+};
+
+const rentalsSection = {
+    eyebrow: 'Available Rentals',
+    title: 'Dependable Trailers Ready When You Are',
+    description: 'Choose from our heavy-duty dump trailer or comfortable holiday trailer.',
+    features: [
+        {
+            icon: Truck,
+            title: 'Dump Trailer',
+            description: 'Haul debris and materials with ease.',
+        },
+        {
+            icon: Tent,
+            title: 'Holiday Trailer',
+            description: 'Enjoy your time away with a clean and cozy trailer.',
+        },
+    ],
+};
+---
+
+<Layout title="Rentals" description="Trailer rentals for projects and vacations">
+    <InnerHero content={heroContent} />
+    <Features content={rentalsSection} background="light" padding="base" />
+</Layout>
