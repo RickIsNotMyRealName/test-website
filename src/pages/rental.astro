@@ -15,6 +15,11 @@ const rentalsSection = {
     eyebrow: 'Available Rentals',
     title: 'Dependable Trailers Ready When You Are',
     description: 'Choose from our heavy-duty dump trailer or comfortable holiday trailer.',
+    button: {
+        text: 'Contact Us',
+        link: '/contact',
+        variant: 'primary' as const,
+    },
     features: [
         {
             icon: Truck,
@@ -30,7 +35,16 @@ const rentalsSection = {
 };
 ---
 
-<Layout title="Rentals" description="Trailer rentals for projects and vacations">
+<Layout
+    title="Rentals"
+    description="Trailer rentals for projects and vacations"
+    footerCta={{
+        title: '',
+        description: '',
+        hideCta: true,
+        button: { text: '', link: '#' },
+    }}
+>
     <InnerHero content={heroContent} />
     <Features content={rentalsSection} background="light" padding="base" />
 </Layout>
