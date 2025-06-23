@@ -1,10 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import InnerHero from '../components/sections/InnerHero.astro';
+import Stats from '../components/sections/Stats.astro';
+import CtaBanner from '../components/sections/CtaBanner.astro';
+import { statsLists } from '../data/stats';
 
 const heroContent = {
     title: 'About Us',
     description: 'Learn more about Mount View Ventures Inc.',
+};
+
+const statsSection = {
+    eyebrow: 'Our Experience',
+    title: 'Decades of Quality Craftsmanship',
+    description: 'Proudly serving our community with over 25 years of building expertise.',
+    stats: statsLists.withContent.stats,
+};
+
+const mainCta = {
+    eyebrow: 'Ready to Start?',
+    title: 'Schedule Your Consultation',
+    description: 'Get in touch with our team to discuss your next project.',
+    button: {
+        text: 'Contact Us',
+        link: '/contact',
+        target: '_self' as const,
+    },
 };
 ---
 
@@ -53,4 +74,6 @@ const heroContent = {
             and visual appeal.
         </p>
     </article>
+    <Stats content={statsSection} background="dark" padding="base" />
+    <CtaBanner content={mainCta} variant="contained" background="light" padding="base" />
 </Layout>
