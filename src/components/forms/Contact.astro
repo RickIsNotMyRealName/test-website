@@ -13,14 +13,6 @@ const hearAboutOptions = [
     { label: 'Other', value: 'other' },
 ];
 
-const interestOptions = [
-    { label: 'New Construction', value: 'construction' },
-    { label: 'Renovations', value: 'renovations' },
-    { label: 'Overhead Doors & Roll Shutters', value: 'doors' },
-    { label: 'Concrete Work', value: 'concrete' },
-    { label: 'Decks & Fencing', value: 'decks' },
-];
-
 const serviceOptions = [
     { label: 'Custom Homes & Shops', value: 'homes' },
     { label: 'Interior or Exterior Renovations', value: 'renovations' },
@@ -56,13 +48,6 @@ const formBackground = 'light';
             name="hear-about"
             options={hearAboutOptions}
             required
-            background={formBackground}
-        />
-        <Checkbox
-            label="Areas of Interest"
-            id="interests"
-            name="interests"
-            options={interestOptions}
             background={formBackground}
         />
     </div>
