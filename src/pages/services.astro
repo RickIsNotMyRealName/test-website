@@ -51,7 +51,10 @@ const schemaData = {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {
                 services.map((s) => (
-                    <section id={s.id} class="bg-white border-t-4 border-accent rounded-lg shadow-sm p-6 flex flex-col">
+                    <section
+                        id={s.id}
+                        class="bg-white border-t-4 border-accent rounded-lg shadow-sm p-6 flex flex-col scroll-mt-24"
+                    >
                         <div class="flex items-center gap-3 mb-4">
                             <s.icon class="text-accent w-8 h-8" aria-hidden="true" />
                             <h3 class="text-h3 m-0" id={`${s.id}-title`}>
