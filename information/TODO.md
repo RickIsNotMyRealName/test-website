@@ -1,22 +1,27 @@
 # Todo List
+
 ## Pages
-- Services page
-- Rental Page
-	- dump trailer
-	- holiday trailer
-- Contact Us page
-- Gallery page
-- About Us page
+- [x] Services page
+- [ ] Rental Page
+  - [ ] dump trailer
+  - [ ] holiday trailer
+- [ ] Contact Us page
+- [ ] Gallery page
+- [ ] About Us page
+
 ## Others
+
 - Fix up the footer
-	- remove the socials
-	- Remove the about section
-	- maybe reduce the sections to two
+  - remove the socials
+  - Remove the about section
+  - maybe reduce the sections to two
 - Find a place to put the Facebook page or maybe a google link
 - link to Google review page
 
-# Website Elements
-## Colours
+## Website Elements
+
+### Colours
+
 - Black
 - White
 - Silver
