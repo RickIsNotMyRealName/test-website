@@ -447,43 +447,54 @@
         --color-header-logo: var(--color-primary);
         --color-footer-logo: var(--color-primary);
     }
+
     [data-theme='mountview'] {
         --color-primary: #166534;
         --color-primary-light: #2ba45f;
         --color-primary-dark: #0a2a14;
+
         --color-secondary: #475569;
         --color-secondary-light: #6b7c95;
         --color-secondary-dark: #334155;
-        --color-accent: #c05600;
-        --color-accent-light: #d6781f;
-        --color-accent-dark: #8a4400;
+
+        --color-accent: #166534;
+        --color-accent-light: #2ba45f;
+        --color-accent-dark: #0a2a14;
+
         --color-background: #ffffff;
         --color-background-light: #f7f9f9;
         --color-background-dark: #475569;
+
         --color-headline: #111827;
         --color-headline-light: #374151;
         --color-headline-dark: #ffffff;
+
         --color-body-base: #374151;
         --color-body-light: #4b5563;
         --color-body-dark: #e5e7eb;
+
         --color-eyebrow: var(--color-primary);
         --color-eyebrow-light: var(--color-primary-light);
         --color-eyebrow-dark: #cbd5e1;
+
         --color-input: var(--color-background-light);
         --color-input-light: var(--color-background-light);
         --color-input-dark: var(--color-background-dark);
         --color-input-text: var(--color-body-base);
         --color-input-text-light: var(--color-headline-light);
         --color-input-text-dark: var(--color-headline-dark);
+
         --color-nav-text: var(--color-body-base);
         --color-nav-text-hover: var(--color-primary);
         --color-nav-text-active: var(--color-primary);
         --color-nav-text-current: var(--color-primary);
         --color-nav-submenu-bg: var(--color-background-light);
+
         --color-nav-mobile-text: var(--color-body-base);
         --color-nav-mobile-text-hover: var(--color-headline-dark);
         --color-nav-mobile-text-active: var(--color-body-base);
         --color-nav-mobile-text-current: var(--color-headline-dark);
+
         --color-header-logo: var(--color-primary);
         --color-footer-logo: var(--color-primary);
     }
