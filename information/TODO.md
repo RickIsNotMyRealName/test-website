@@ -24,8 +24,6 @@
     - maybe reduce the sections to two
 - Find a place to put the Facebook page https://www.facebook.com/profile.php?id=61565598476741 or maybe a google link
 - link to Google review page
-- Fix incorrect email should be john@mountviewventures.ca
-- On the contact page make it so it says call John @ {phone number}
 
 ## Website Elements
 
