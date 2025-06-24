@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import InnerHero from '../components/sections/InnerHero.astro';
+import CtaBanner from '../components/sections/CtaBanner.astro';
 import Button from '../components/ui/Button.astro';
 import { services } from '../data/services';
 import { siteConfig } from '../data/config';
@@ -8,6 +9,18 @@ import { siteConfig } from '../data/config';
 const heroContent = {
     title: 'Our Services',
     description: 'Building Quality Spaces, Enhancing Lives—Inside, Outside, and All Around.',
+};
+
+const rentalsCta = {
+    eyebrow: 'Rentals',
+    title: 'Reliable Trailers Ready to Go',
+    description: 'From heavy-duty dump trailers to comfortable holiday trailers, we have rentals for every need.',
+    button: {
+        text: 'View Rentals',
+        link: '/rental',
+        variant: 'primary' as const,
+        target: '_self' as const,
+    },
 };
 
 const schemaData = {
@@ -80,6 +93,8 @@ const schemaData = {
             }
         </div>
     </div>
+
+    <CtaBanner content={rentalsCta} variant="contained" background="light" padding="base" />
 
     <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-50">
         <Button href="/contact" variant="accent" size="lg" class="focus-visible:ring-accent" aria-label="Get a Quote">
