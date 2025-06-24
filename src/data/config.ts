@@ -6,7 +6,7 @@ export const siteConfig = {
         Github: 'https://github.com',
         Instagram: 'https://instagram.com',
         LinkedIn: 'https://linkedin.com',
-        Email: 'info@mountviewventures.com',
+        Email: 'john@mountviewventures.ca',
         Phone: '+1 (587) 377-1379',
         Location: 'Slave Lake, Alberta',
     },
