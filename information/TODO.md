@@ -3,11 +3,17 @@
 ## Pages
 
 - [x] Services page
-- [x] Rental Page
+- [ ] Rental Page
   - [x] dump trailer
   - [x] holiday trailer
+  - [ ] Add rates and drop off information (we can pick up and drop dump trailer)
+  - [ ] Add pictures of the trailers
 - [ ] Contact Us page
+  - [x] Style the form
+  - [ ] Make the submit button work
 - [ ] Gallery page
+  - [x] Style the gallery
+  - [ ] Add pictures
 - [x] About Us page
 
 ## Others
@@ -16,8 +22,10 @@
     - remove the socials
     - Remove the about section
     - maybe reduce the sections to two
-- Find a place to put the Facebook page or maybe a google link
+- Find a place to put the Facebook page https://www.facebook.com/profile.php?id=61565598476741 or maybe a google link
 - link to Google review page
+- Fix incorrect email should be john@mountviewventures.ca
+- On the contact page make it so it says call John @ {phone number}
 
 ## Website Elements
 
